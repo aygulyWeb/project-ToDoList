@@ -35,13 +35,14 @@ body {
 	padding-right: 30px;
 	padding-top: 30px;
 }
+
 .reg-title {
 	text-transform: uppercase;
 	font-size: 20px;
 	color: rgb(107, 104, 104);
 }
 
-.reg-form input {
+.reg-form .reg-input-style {
 	outline: none;
 	appearance: none;
 	border: 1px solid #ccc;
@@ -67,6 +68,24 @@ body {
 }
 
 /* Авторизация ошибки */
-input.error {
+.reg-input-style.error {
 	border-color: red;
+}
+
+.create-show-pass {
+	margin-top: 10px;
+}
+.create-show {
+	color: rgb(82, 81, 81);
+}
+#create-check {
+	cursor: pointer;
+}
+
+#reg-form-auth.active {
+	display: none;
+}
+
+#create-form-acc.active {
+	display: none;
 }

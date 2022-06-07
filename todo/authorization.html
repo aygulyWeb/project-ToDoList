@@ -5,24 +5,35 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aothorization for ToDo list</title>
+	<title>Authorization for ToDo list</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<div class="container">
-		<form action="index.html" class="reg-form">
+
+		<!-- РЕГИСТРАЦИЯ -->
+		<form action="#" class="reg-form" id="reg-form-auth">
 			<label for="#" class="reg-title">authorization</label>
-			<!-- <label for="#" class="reg-title">create your account</label> -->
-			<input type="text" id="reg-login" placeholder="Login">
-			<input type="password" id="reg-password" placeholder="Password">
-			<!-- <input type="password" name="pass" id="reg-confirm" placeholder="confirm password">
-			<input type="checkbox" name="check" id="reg-check"> -->
-			<!-- <label for="#">Show password</label> -->
-			<button class="reg-btn">Submit</button>
-			<!-- <button class="reg-btn">Create</button> -->
-			<a href="#" class="reg-link">Create an account</a>
-			<!-- <a href="#" class="reg-link">I have an acoount</a> -->
+			<input type="text" class="reg-input-style" id="reg-login" placeholder="Login">
+			<input type="password" class="reg-input-style" id="reg-password" placeholder="Password">
+			<button class="reg-btn" id="reg-submit">Submit</button>
+			<a href="#" class="reg-link" id="reg-link-acc">Create an account</a>
+		</form>
+
+		<!-- Создание Аккаунта -->
+		<form action="#" class="reg-form" id="create-form-acc">
+			<label for="#" class="reg-title">create your account</label>
+			<input type="text" class="reg-input-style" id="reg-login" placeholder="Login">
+			<input type="password" class="reg-input-style" id="create-password" placeholder="Password">
+			<input type="password" class="reg-input-style" name="pass" id="create-confirm"
+				placeholder="Confirm Password">
+			<div class="create-show-pass">
+				<input type="checkbox" name="check" id="create-check">
+				<label for="#" class="create-show">Show password</label>
+			</div>
+			<button class="reg-btn" id="create-btn">Create</button>
+			<a href="#" class="reg-link" id="create-link-acc">I have an acoount</a>
 		</form>
 
 	</div>
